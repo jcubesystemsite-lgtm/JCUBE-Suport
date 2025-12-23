@@ -1,197 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JCube</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121212; color: #f0f0f0; line-height: 1.6; }
+<section id="info">
+<h2 id="info-title">Company Informations</h2>
 
-        header {
-            background-color: #1e1e1e;
-            padding: 25px 20px;
-            text-align: center;
-            border-bottom: 3px solid #4CAF50;
-            position: relative;
-        }
-        header h1 { font-size: 3em; color: #4CAF50; }
-        header p { margin-top: 5px; }
+<p>
+JCube is a creative technology company built with a long-term vision focused on innovation,
+original ideas and the future of digital entertainment.
+</p>
 
-        /* Menu de três pontinhos */
-        .menu-dots {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 2em;
-            cursor: pointer;
-        }
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background-color: #1f1f1f;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            overflow: hidden;
-            min-width: 150px;
-            z-index: 100;
-        }
-        .dropdown label { display: block; padding: 12px 15px; }
-        .dropdown select {
-            width: 90%;
-            margin: 10px auto;
-            display: block;
-            padding: 8px;
-            border-radius: 5px;
-            border: 1px solid #4CAF50;
-            background-color: #1f1f1f;
-            color: #f0f0f0;
-        }
+<p>
+Our core mission is to design and develop original intellectual properties that combine
+games, anime-inspired storytelling and cinematic presentation.
+</p>
 
-        /* Abas */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #1f1f1f;
-            border-bottom: 1px solid #333;
-        }
-        nav button {
-            color: #f0f0f0;
-            padding: 15px 30px;
-            background: none;
-            border: none;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        nav button:hover, nav button.active {
-            background-color: #4CAF50;
-            color: #fff;
-        }
+<p>
+JCube does not follow trends.  
+JCube creates concepts.
+</p>
 
-        main { padding: 50px 20px; max-width: 1000px; margin: auto; }
-        section { display: none; }
-        section.active { display: block; }
-        section h2 {
-            font-size: 2.2em; color: #4CAF50; margin-bottom: 20px;
-            border-bottom: 2px solid #4CAF50; display: inline-block; padding-bottom: 5px;
-        }
-        section p, section ul { font-size: 1.1em; margin-bottom: 15px; }
-        ul { list-style: none; }
-        ul li::before { content: "✔ "; color: #4CAF50; }
+<p>
+The company operates with a strong focus on creativity, experimentation and technical research.
+Every project begins with world-building, character design and system planning.
+</p>
 
-        footer {
-            background-color: #1e1e1e;
-            text-align: center;
-            padding: 15px;
-            border-top: 3px solid #4CAF50;
-        }
-        a.button {
-            display: inline-block; padding: 12px 25px; background-color: #4CAF50; color: white; text-decoration: none;
-            border-radius: 5px; margin-top: 10px; transition: 0.3s;
-        }
-        a.button:hover { background-color: #45a049; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>JCube</h1>
-        <p>Inovação em Jogos, Animes e Filmes</p>
+<p>
+In game development, JCube explores new gameplay mechanics, immersive systems,
+creative level design and meaningful player interaction.
+</p>
 
-        <div class="menu-dots" onclick="toggleMenu()">⋮</div>
-        <div class="dropdown" id="dropdown-menu">
-            <label for="language-selector">Idioma:</label>
-            <select id="language-selector" onchange="changeLanguage()">
-                <option value="en" selected>English</option>
-                <option value="pt">Português</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
-                <option value="de">Deutsch</option>
-                <option value="ja">日本語</option>
-            </select>
-        </div>
-    </header>
+<p>
+We aim to create games that feel alive, dynamic and emotionally engaging.
+Games that are not just played, but experienced.
+</p>
 
-    <nav>
-        <button class="tab-button active" onclick="showTab('home')">Home</button>
-        <button class="tab-button" onclick="showTab('informacoes')">Informações</button>
-        <button class="tab-button" onclick="showTab('contato')">Contato</button>
-    </nav>
+<p>
+In the anime field, JCube focuses on original universes.
+Stories are designed with deep lore, consistent rules and strong visual identity.
+</p>
 
-    <main>
-        <section id="home" class="active">
-            <h2>Bem-vindo à JCube</h2>
-            <p id="home-text">A JCube é uma empresa dedicada a criar experiências de entretenimento únicas, combinando criatividade, tecnologia e paixão por jogos, animes e filmes.</p>
-            <a href="#contato" class="button" id="contact-button">Entre em Contato</a>
-        </section>
+<p>
+Each universe is planned to expand across multiple formats,
+including games, animated productions and future interactive media.
+</p>
 
-        <section id="informacoes">
-            <h2>Informações</h2>
-            <p id="info-text">A JCube atua nos seguintes segmentos:</p>
-            <ul id="info-list">
-                <li>🎮 Desenvolvimento de jogos inovadores para PC, consoles e dispositivos móveis.</li>
-                <li>📺 Produção de animes originais e licenciados de alta qualidade.</li>
-                <li>🎬 Criação e distribuição de filmes animados e live-action.</li>
-            </ul>
-            <p id="info-text2">Nosso objetivo é entregar produtos que encantem fãs ao redor do mundo, mantendo padrão profissional, inovação e criatividade em todos os projetos.</p>
-        </section>
+<p>
+JCube strongly believes in creator-driven development.
+Ideas come first, technology follows.
+</p>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p id="contact-text">Para dúvidas, parcerias ou mais informações, entre em contato:</p>
-            <p>Email: <a href="mailto:JcubeSuport@gmail.com" style="color:#4CAF50;">JcubeSuport@gmail.com</a></p>
-        </section>
-    </main>
+<p>
+One of JCube’s long-term research goals is the conceptual design of a proprietary gaming console.
+This console is envisioned as a creative platform rather than a traditional hardware product.
+</p>
 
-    <footer>
-        &copy; 2025 JCube. Todos os direitos reservados.
-    </footer>
+<p>
+The focus of this console concept includes:
+</p>
 
-    <script>
-        // Menu de três pontinhos
-        function toggleMenu() {
-            const menu = document.getElementById('dropdown-menu');
-            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-        }
-        window.onclick = function(event) {
-            if (!event.target.matches('.menu-dots') && !event.target.matches('#language-selector')) {
-                const menu = document.getElementById('dropdown-menu');
-                if (menu.style.display === 'block') menu.style.display = 'none';
-            }
-        }
+<p>
+• Accessibility for independent developers  
+• Powerful but simple development tools  
+• Deep integration with original game engines  
+• Support for experimental gameplay ideas  
+</p>
 
-        // Função para mostrar abas
-        function showTab(tabId) {
-            const tabs = document.querySelectorAll('section');
-            tabs.forEach(tab => tab.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
+<p>
+JCube also explores future technologies such as:
+</p>
 
-            const buttons = document.querySelectorAll('.tab-button');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
-        }
+<p>
+• New rendering techniques  
+• AI-assisted development tools  
+• Advanced animation systems  
+• Cross-platform architectures  
+</p>
 
-        // Troca de idioma (apenas EN/PT como exemplo)
-        function changeLanguage() {
-            const lang = document.getElementById('language-selector').value;
-            if (lang === 'pt') {
-                document.getElementById('home-text').textContent = 'A JCube é uma empresa dedicada a criar experiências de entretenimento únicas, combinando criatividade, tecnologia e paixão por jogos, animes e filmes.';
-                document.getElementById('info-text').textContent = 'A JCube atua nos seguintes segmentos:';
-                document.getElementById('info-list').innerHTML = '<li>🎮 Desenvolvimento de jogos inovadores para PC, consoles e dispositivos móveis.</li><li>📺 Produção de animes originais e licenciados de alta qualidade.</li><li>🎬 Criação e distribuição de filmes animados e live-action.</li>';
-                document.getElementById('info-text2').textContent = 'Nosso objetivo é entregar produtos que encantem fãs ao redor do mundo, mantendo padrão profissional, inovação e criatividade em todos os projetos.';
-                document.getElementById('contact-text').textContent = 'Para dúvidas, parcerias ou mais informações, entre em contato:';
-                document.getElementById('contact-button').textContent = 'Entre em Contato';
-            } else {
-                document.getElementById('home-text').textContent = 'JCube is a company dedicated to creating unique entertainment experiences, combining creativity, technology, and passion for games, anime, and films.';
-                document.getElementById('info-text').textContent = 'JCube operates in the following segments:';
-                document.getElementById('info-list').innerHTML = '<li>🎮 Development of innovative games for PC, consoles, and mobile devices.</li><li>📺 Production of original and licensed high-quality anime.</li><li>🎬 Creation and distribution of animated and live-action films.</li>';
-                document.getElementById('info-text2').textContent = 'Our goal is to deliver products that delight fans worldwide, maintaining professional standards, innovation, and creativity in every project.';
-                document.getElementById('contact-text').textContent = 'For inquiries, partnerships, or more information, contact us:';
-                document.getElementById('contact-button').textContent = 'Contact Us';
-            }
-        }
-    </script>
-</body>
-</html>
+<p>
+We are interested in redefining how players interact with digital worlds.
+Not only through controllers, but through systems, mechanics and narrative design.
+</p>
+
+<p>
+JCube values originality above replication.
+Every project must offer something new, unique or unexplored.
+</p>
+
+<p>
+The company culture is based on learning, experimentation and constant improvement.
+Mistakes are part of innovation.
+</p>
+
+<p>
+JCube is built to grow slowly and solidly.
+Quality is always prioritized over speed.
+</p>
+
+<p>
+Our vision is global.
+Our ambition is timeless.
+</p>
+
+<p>
+JCube exists to create what does not exist yet.
+</p>
+
+<p>
+Built for the future.
+Built by creators.
+Built for players.
+</p>
+
+</section>
